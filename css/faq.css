@@ -1,0 +1,114 @@
+/* DASS MLS FAQ仕様。全スタイルは専用クラス内に限定。既存のstyle.cssへ上書きしない。 */
+.dcfaq-theme {
+  --dcfaq-bg: #fffdf7;
+  --dcfaq-bg-alt: #f8fbff;
+  --dcfaq-accent: #2baebc;
+  --dcfaq-accent-2: #3bafda;
+  --dcfaq-link: #126572;
+  --dcfaq-cta: #ff8a5b;
+  --dcfaq-ink: #17324d;
+  --dcfaq-soft: #4b617a;
+  --dcfaq-line: #e3ece9;
+  --dcfaq-font: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  color: var(--dcfaq-ink);
+  font-family: var(--dcfaq-font);
+  font-size: 1rem;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+body.dcfaq-page { margin: 0; background: var(--dcfaq-bg); }
+.dcfaq-theme *, .dcfaq-theme *::before, .dcfaq-theme *::after { box-sizing: border-box; }
+.dcfaq-theme [hidden] { display: none !important; }
+.dcfaq-theme a { color: inherit; }
+.dcfaq-theme a:focus-visible, .dcfaq-theme button:focus-visible, .dcfaq-theme summary:focus-visible {
+  outline: 3px solid var(--dcfaq-link); outline-offset: 4px;
+}
+.dcfaq-theme .dcfaq-container { width: 100%; max-width: 1200px; margin-inline: auto; padding-inline: 24px; }
+.dcfaq-theme h1, .dcfaq-theme h2 { font-family: var(--dcfaq-font); font-weight: 700; line-height: 1.4; letter-spacing: normal; }
+.dcfaq-theme p { margin: 0 0 1em; }
+.dcfaq-theme .dcfaq-skip { position: fixed; top: 8px; left: 8px; z-index: 100; transform: translateY(-180%); padding: 10px 16px; background: #fff; }
+.dcfaq-theme .dcfaq-skip:focus { transform: none; }
+.dcfaq-theme .dcfaq-header { position: sticky; top: 0; z-index: 20; background: rgba(255,253,247,.97); border-bottom: 1px solid var(--dcfaq-line); }
+.dcfaq-theme .dcfaq-header-row { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-block: 16px; }
+.dcfaq-theme .dcfaq-brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; flex-shrink: 0; }
+.dcfaq-theme .dcfaq-brand img { display: block; width: 42px; height: 42px; object-fit: contain; }
+.dcfaq-theme .dcfaq-brand-name { font-size: 1.75rem; font-weight: 700; letter-spacing: .08em; line-height: 1.15; }
+.dcfaq-theme .dcfaq-brand-name small { display: block; font-size: .75rem; letter-spacing: .15em; margin-top: 5px; }
+.dcfaq-theme .dcfaq-header-actions { display: flex; align-items: center; gap: 20px; }
+.dcfaq-theme .dcfaq-button { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 12px 24px; border: 0; border-radius: 999px; background: var(--dcfaq-cta); color: var(--dcfaq-ink); font: inherit; font-weight: 700; text-decoration: none; text-align: center; }
+.dcfaq-theme .dcfaq-button:hover { background: #ff9f43; }
+.dcfaq-theme .dcfaq-button-small { padding: 9px 20px; font-size: .9375rem; }
+.dcfaq-theme .dcfaq-menu-toggle { display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 8px 0 8px 8px; color: var(--dcfaq-ink); background: none; border: none; font: inherit; font-size: .875rem; font-weight: 700; cursor: pointer; }
+.dcfaq-theme .dcfaq-menu-icon { display: grid; gap: 5px; width: 24px; }
+.dcfaq-theme .dcfaq-menu-icon i { display: block; height: 2px; background: currentColor; }
+.dcfaq-theme .dcfaq-nav { border-top: 1px solid var(--dcfaq-line); max-height: calc(100dvh - 90px); overflow-y: auto; }
+.dcfaq-theme .dcfaq-nav ul { display: flex; flex-wrap: wrap; gap: 0 28px; list-style: none; padding: 8px 0; margin: 0; }
+.dcfaq-theme .dcfaq-nav a { display: block; padding: 10px 0; text-decoration: none; font-size: .9375rem; }
+.dcfaq-theme .dcfaq-nav a:hover, .dcfaq-theme .dcfaq-nav a[aria-current] { color: var(--dcfaq-link); text-decoration: underline; text-underline-offset: 5px; }
+.dcfaq-theme .dcfaq-hero { min-height: 380px; display: flex; align-items: center; background: #edf3f4 url("../images/montreal-faq.jpg") center / cover; padding: 60px 0; }
+.dcfaq-theme .dcfaq-hero-card { max-width: 680px; padding: 40px 44px; background: rgba(255,253,247,.94); border-radius: 20px; box-shadow: 0 10px 30px rgba(23,50,77,.10); }
+.dcfaq-theme .dcfaq-eyebrow { display: inline-block; background: #eaf8fa; color: var(--dcfaq-link); padding: 6px 14px; border-radius: 999px; font-size: .875rem; font-weight: 700; letter-spacing: .06em; margin-bottom: 18px; }
+.dcfaq-theme .dcfaq-hero h1 { font-size: 1.9rem; margin: 0 0 .5em; }
+.dcfaq-theme .dcfaq-hero p { color: var(--dcfaq-soft); font-size: 1.05rem; margin: 0; }
+.dcfaq-theme .dcfaq-body { padding-block: 80px; }
+.dcfaq-theme .dcfaq-group { max-width: 800px; margin: 0 auto 40px; scroll-margin-top: 110px; }
+.dcfaq-theme .dcfaq-group:last-of-type { margin-bottom: 0; }
+.dcfaq-theme .dcfaq-group-title { font-size: 1.1rem; color: var(--dcfaq-link); margin: 0 0 16px; }
+.dcfaq-theme .dcfaq-list { display: flex; flex-direction: column; gap: 14px; }
+.dcfaq-theme .dcfaq-item { background: #fff; border: 1px solid var(--dcfaq-line); border-radius: 14px; padding: 6px 24px; box-shadow: 0 4px 14px rgba(23,50,77,.05); scroll-margin-top: 110px; }
+.dcfaq-theme .dcfaq-question { position: relative; cursor: pointer; font-family: var(--dcfaq-font); font-size: 1rem; font-weight: 700; line-height: 1.8; padding: 18px 30px 18px 0; list-style: none; overflow-wrap: anywhere; }
+.dcfaq-theme .dcfaq-question::-webkit-details-marker { display: none; }
+.dcfaq-theme .dcfaq-question::marker { content: ""; }
+.dcfaq-theme .dcfaq-icon { position: absolute; right: 0; top: 22px; width: 18px; height: 18px; color: var(--dcfaq-link); transition: transform .2s ease; }
+.dcfaq-theme .dcfaq-icon::before, .dcfaq-theme .dcfaq-icon::after { content: ""; position: absolute; top: 8px; left: 1px; width: 16px; height: 2px; background: currentColor; }
+.dcfaq-theme .dcfaq-icon::after { transform: rotate(90deg); }
+.dcfaq-theme .dcfaq-item[open] .dcfaq-icon { transform: rotate(45deg); }
+.dcfaq-theme .dcfaq-answer { color: var(--dcfaq-soft); font-size: 1rem; line-height: 1.8; padding-bottom: 18px; overflow-wrap: anywhere; }
+.dcfaq-theme .dcfaq-answer p { margin: 0; }
+.dcfaq-theme .dcfaq-answer p + p { margin-top: 1em; }
+.dcfaq-theme .dcfaq-answer .dcfaq-note { font-size: .9375rem; }
+.dcfaq-theme .dcfaq-reference { color: var(--dcfaq-link); text-decoration: underline; text-underline-offset: .2em; }
+.dcfaq-theme .dcfaq-notice { max-width: 900px; margin: 28px auto 0; padding: 18px 22px; border: 1px dashed var(--dcfaq-accent-2); border-radius: 14px; color: var(--dcfaq-soft); background: var(--dcfaq-bg-alt); font-size: .9375rem; }
+.dcfaq-theme .dcfaq-cta-section { padding: 0 24px 80px; }
+.dcfaq-theme .dcfaq-cta { max-width: 1152px; margin-inline: auto; background: linear-gradient(135deg,var(--dcfaq-accent),var(--dcfaq-accent-2)); border-radius: 20px; padding: 56px 32px; text-align: center; color: var(--dcfaq-ink); }
+.dcfaq-theme .dcfaq-cta h2 { font-size: 1.8rem; margin: 0 auto .6em; max-width: 800px; }
+.dcfaq-theme .dcfaq-cta p { max-width: 600px; margin: 0 auto 28px; }
+.dcfaq-theme .dcfaq-cta .dcfaq-button { box-shadow: 0 8px 20px rgba(0,0,0,.15); }
+.dcfaq-theme .dcfaq-footer { border-top: 1px solid var(--dcfaq-line); background: #f8fbff; padding: 32px 0; }
+.dcfaq-theme .dcfaq-footer-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; }
+.dcfaq-theme .dcfaq-footer-links { display: flex; flex-wrap: wrap; gap: 12px 24px; font-size: .9375rem; }
+.dcfaq-theme .dcfaq-footer a { text-decoration: none; }
+.dcfaq-theme .dcfaq-footer a:hover { text-decoration: underline; }
+.dcfaq-theme .dcfaq-copyright { display: flex; flex-wrap: nowrap; justify-content: space-between; gap: 24px; margin-top: 24px; font-size: .875rem; color: var(--dcfaq-soft); }
+@media (max-width: 48rem) {
+  .dcfaq-theme .dcfaq-header-actions { gap: 12px; }
+  .dcfaq-theme .dcfaq-hero-card { padding: 30px; }
+  .dcfaq-theme .dcfaq-hero h1 { font-size: 1.7rem; }
+  .dcfaq-theme .dcfaq-nav ul { display: block; }
+  .dcfaq-theme .dcfaq-nav li + li { border-top: 1px solid var(--dcfaq-line); }
+  .dcfaq-theme .dcfaq-nav a { padding-block: 12px; }
+  .dcfaq-theme .dcfaq-body { padding-block: 48px; }
+  .dcfaq-theme .dcfaq-cta-section { padding-bottom: 48px; }
+  .dcfaq-theme .dcfaq-cta { padding: 40px 24px; }
+  .dcfaq-theme .dcfaq-cta h2 { font-size: 1.5rem; }
+}
+@media (max-width: 25rem) {
+  .dcfaq-theme .dcfaq-container { padding-inline: 20px; }
+  .dcfaq-theme .dcfaq-header-row { gap: 12px; }
+  .dcfaq-theme .dcfaq-brand { gap: 8px; }
+  .dcfaq-theme .dcfaq-brand img { width: 36px; height: 36px; }
+  .dcfaq-theme .dcfaq-brand-name { font-size: 1.5rem; }
+  .dcfaq-theme .dcfaq-menu-label, .dcfaq-theme .dcfaq-header-actions > .dcfaq-button { display: none; }
+  .dcfaq-theme .dcfaq-item { padding-inline: 18px; }
+  .dcfaq-theme .dcfaq-hero-card { padding: 28px 24px; }
+}
+@media (prefers-reduced-motion: reduce) { .dcfaq-theme .dcfaq-icon { transition: none; } }
+@media print {
+  .dcfaq-theme .dcfaq-header, .dcfaq-theme .dcfaq-footer, .dcfaq-theme .dcfaq-cta-section, .dcfaq-theme .dcfaq-skip { display: none; }
+  .dcfaq-theme .dcfaq-hero { min-height: auto; padding: 0 0 24px; background: none; }
+  .dcfaq-theme .dcfaq-hero-card { max-width: none; padding: 0; box-shadow: none; background: none; }
+  .dcfaq-theme .dcfaq-body { padding: 0; }
+  .dcfaq-theme .dcfaq-item { box-shadow: none; }
+  .dcfaq-theme .dcfaq-question { break-after: avoid; }
+  .dcfaq-theme .dcfaq-icon { display: none; }
+}
