@@ -88,14 +88,17 @@ h2 { color: var(--navy); font-size: clamp(2.25rem, 4.35vw, 4.15rem); font-weight
 .statement h2 { margin-top: 29px; max-width: 1030px; color: var(--white); font-size: clamp(2.6rem, 5.45vw, 5.1rem); }
 
 .zen-section { background: var(--paper); }
+.zen-section:not(.working-holiday-section) { padding-bottom: 59px; }
+.working-holiday-section { padding-top: 59px; }
 .zen-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 8%; align-items: center; }
 .zen-logo-panel { min-height: 510px; padding: 40px; display: flex; flex-direction: column; justify-content: space-between; background: var(--white); border: 1px solid var(--line); }
 .zen-logo-panel > p { color: var(--blue); font: 700 .65rem/1.5 var(--mono); letter-spacing: .16em; }
 .zen-logo-panel img { width: 100%; aspect-ratio: 1.3/1; object-fit: contain; }
-.working-holiday-panel { margin: 0; }
+.working-holiday-panel { margin: 0; padding-inline: 0; }
+.working-holiday-panel > p { padding-inline: 40px; }
 .working-holiday-image { margin-top: 26px; }
-.working-holiday-panel img { object-fit: cover; }
-.working-holiday-panel figcaption { margin-top: 8px; color: var(--muted); font-size: .68rem; line-height: 1.5; }
+.working-holiday-panel img { aspect-ratio: 1.2 / 1; object-fit: cover; }
+.working-holiday-panel figcaption { margin: 16px 40px 0; color: var(--muted); font-size: .68rem; line-height: 1.5; }
 .zen-copy .lead { margin-top: 36px; }
 .zen-copy > p:not(.eyebrow):not(.lead) { margin-top: 19px; color: var(--muted); font-size: .9rem; }
 .legal-note { margin-top: 35px; padding: 22px 25px; background: var(--sky); border-left: 4px solid var(--blue); }
@@ -124,7 +127,7 @@ h2 { color: var(--navy); font-size: clamp(2.25rem, 4.35vw, 4.15rem); font-weight
 .featured .tag-list span { color: var(--white); border-color: rgba(255,255,255,.36); }
 
 .montreal { color: var(--white); background: var(--navy-deep); }
-.montreal-image { width: 100%; height: min(55vw, 620px); overflow: hidden; }
+.montreal-image { width: 50%; aspect-ratio: 5 / 4; margin-inline: auto; overflow: hidden; }
 .montreal-image img { width: 100%; height: 100%; object-fit: cover; object-position: center 44%; filter: saturate(.82); }
 .montreal-layout { padding-top: 105px; padding-bottom: 115px; display: grid; grid-template-columns: 1fr .9fr; gap: 9%; }
 .montreal h2 { color: var(--white); }
@@ -262,6 +265,12 @@ h2 { color: var(--navy); font-size: clamp(2.25rem, 4.35vw, 4.15rem); font-weight
   .statement h2 { font-size: 2.15rem; line-height: 1.5; }
   .zen-logo-panel { min-height: 315px; padding: 28px; }
   .zen-logo-panel img { aspect-ratio: 1.5/1; }
+  .zen-section:not(.working-holiday-section) { padding-bottom: 39px; }
+  .working-holiday-section { padding-top: 39px; }
+  .working-holiday-panel { padding-inline: 0; }
+  .working-holiday-panel > p { padding-inline: 28px; }
+  .working-holiday-panel img { aspect-ratio: 333 / 250; }
+  .working-holiday-panel figcaption { margin: 24px 28px 0; }
   .zen-copy .lead { margin-top: 27px; }
   .section-intro { margin-bottom: 42px; align-items: start; }
   .section-intro > p { padding-bottom: 0; }
@@ -270,7 +279,7 @@ h2 { color: var(--navy); font-size: clamp(2.25rem, 4.35vw, 4.15rem); font-weight
   .year-number { flex-direction: row; align-items: baseline; gap: 12px; }
   .year-number strong { font-size: 3.2rem; }
   .year-main h3 { font-size: 1.75rem; }
-  .montreal-image { height: 82vw; min-height: 330px; }
+  .montreal-image { width: 86%; }
   .montreal-image img { object-position: 53% center; }
   .montreal-layout { padding-top: 74px; padding-bottom: 79px; }
   .montreal-points { grid-template-columns: 1fr; }
