@@ -127,8 +127,8 @@ h2 { color: var(--navy); font-size: clamp(2.25rem, 4.35vw, 4.15rem); font-weight
 .featured .tag-list span { color: var(--white); border-color: rgba(255,255,255,.36); }
 
 .montreal { color: var(--white); background: var(--navy-deep); }
-.montreal-image { width: 50%; aspect-ratio: 5 / 4; margin-inline: auto; overflow: hidden; }
-.montreal-image img { width: 100%; height: 100%; object-fit: cover; object-position: center 44%; filter: saturate(.82); }
+.montreal-image { width: 70%; height: auto; margin-inline: auto; overflow: hidden; }
+.montreal-image img { width: 100%; height: auto; object-fit: contain; object-position: center; filter: saturate(.82); }
 .montreal-layout { padding-top: 105px; padding-bottom: 115px; display: grid; grid-template-columns: 1fr .9fr; gap: 9%; }
 .montreal h2 { color: var(--white); }
 .montreal-copy { padding-top: 63px; color: rgba(255,255,255,.72); font-size: .9rem; }
@@ -279,8 +279,8 @@ h2 { color: var(--navy); font-size: clamp(2.25rem, 4.35vw, 4.15rem); font-weight
   .year-number { flex-direction: row; align-items: baseline; gap: 12px; }
   .year-number strong { font-size: 3.2rem; }
   .year-main h3 { font-size: 1.75rem; }
-  .montreal-image { width: 86%; }
-  .montreal-image img { object-position: 53% center; }
+  .montreal-image { width: 100%; height: 82vw; min-height: 330px; }
+  .montreal-image img { height: 100%; object-fit: cover; object-position: 53% center; }
   .montreal-layout { padding-top: 74px; padding-bottom: 79px; }
   .montreal-points { grid-template-columns: 1fr; }
   .montreal-points > div { padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,.16); }
