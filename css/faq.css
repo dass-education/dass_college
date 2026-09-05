@@ -45,7 +45,7 @@ body.dcfaq-page { margin: 0; background: var(--dcfaq-bg); }
 .dcfaq-theme .dcfaq-nav ul { display: flex; flex-wrap: wrap; gap: 0 28px; list-style: none; padding: 8px 0; margin: 0; }
 .dcfaq-theme .dcfaq-nav a { display: block; padding: 10px 0; text-decoration: none; font-size: .9375rem; }
 .dcfaq-theme .dcfaq-nav a:hover, .dcfaq-theme .dcfaq-nav a[aria-current] { color: var(--dcfaq-link); text-decoration: underline; text-underline-offset: 5px; }
-.dcfaq-theme .dcfaq-hero { min-height: 380px; display: flex; align-items: center; background: #edf3f4 url("../images/montreal-faq.jpg") center / cover; padding: 60px 0; }
+.dcfaq-theme .dcfaq-hero { min-height: 380px; display: flex; align-items: center; background: #edf3f4 url("../images/montreal-faq.jpg?v=403f802840") center / cover; padding: 60px 0; }
 .dcfaq-theme .dcfaq-hero-card { max-width: 680px; padding: 40px 44px; background: rgba(255,253,247,.94); border-radius: 20px; box-shadow: 0 10px 30px rgba(23,50,77,.10); }
 .dcfaq-theme .dcfaq-eyebrow { display: inline-block; background: #eaf8fa; color: var(--dcfaq-link); padding: 6px 14px; border-radius: 999px; font-size: .875rem; font-weight: 700; letter-spacing: .06em; margin-bottom: 18px; }
 .dcfaq-theme .dcfaq-hero h1 { font-size: 1.9rem; margin: 0 0 .5em; }
