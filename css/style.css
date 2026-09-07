@@ -239,7 +239,7 @@ h2 { color: var(--navy); font-size: clamp(2.25rem, 4.35vw, 4.15rem); font-weight
   .mobile-nav summary span { width: 24px; height: 2px; background: var(--navy); }
   .mobile-nav nav { position: fixed; top: var(--header-h); left: 0; right: 0; padding: 18px 20px 28px; color: var(--navy); background: var(--white); border-bottom: 1px solid var(--line); box-shadow: 0 15px 30px rgba(5,28,48,.12); }
   .mobile-nav nav a { display: block; padding: 13px 4px; border-bottom: 1px solid var(--line); font-size: .88rem; font-weight: 700; }
-  .mobile-nav nav a:last-child { margin-top: 12px; padding: 13px 16px; color: var(--white); background: var(--blue); border: 0; }
+  .mobile-nav nav .nav-cta { margin-top: 12px; padding: 13px 16px; color: var(--white); background: var(--blue); border: 0; }
   .hero { min-height: calc(100svh - var(--header-h)); }
   .hero-media { inset: 0; }
   .hero-media img { object-position: 56% center; }
